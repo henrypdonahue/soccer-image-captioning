@@ -14,7 +14,7 @@ tf.data.experimental.enable_debug_mode()
 
 ###############################################################################################
 def preprocess_labels():
-    with open("IAUSD-Lable-Copy.txt") as file_in:
+    with open("../data/IAUSD-lables.txt") as file_in:
         lines = []
         for line in file_in:
             split_line = line.split()
@@ -30,8 +30,10 @@ def preprocess_labels():
 
 def images_in_array():
     images = []
-    image_folder = "images2/"
+    image_folder = "../data/imagesLocal/"
     for filename in os.listdir(image_folder):
+        if image_folder + '.DS_Store' in images:
+            images.remove(image_folder + '.DS_Store')
         img = imread(os.path.join(image_folder, filename))
         if img is not None:
             images.append(img)
