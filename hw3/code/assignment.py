@@ -19,27 +19,27 @@ def preprocess_labels():
         for line in file_in:
             split_line = line.split()
             split_line.remove(split_line[0])
-            print(split_line)
-            for item in split_line:
-                if item == "1":
-                    lines.append(split_line.index(item) + 1)
-                    break
-        return lines
+            lines.append(np.array(split_line))
+        final_return = np.vstack(lines)
+        #print(final_return)
+        return final_return
 
 #preprocess_labels()
 
+
 def images_in_array():
-    images = []
-    image_folder = "../data/imagesLocal/"
-    for filename in os.listdir(image_folder):
-        if image_folder + '.DS_Store' in images:
-            images.remove(image_folder + '.DS_Store')
-        img = imread(os.path.join(image_folder, filename))
-        if img is not None:
-            images.append(img)
-    return np.array(images)
+    image_folder_path = "../data/imagesLocal/"
+
+    images = [os.path.join(image_folder_path, f) for f in os.listdir(image_folder_path)]
+    if image_folder_path + '.DS_Store' in images:
+        images.remove(image_folder_path + '.DS_Store')
+
+    final_return = np.array(images)
+    print(final_return.shape)
+    return final_return
     
 #images_in_array()
+
 
 def divide_data():
     labels = preprocess_labels()
