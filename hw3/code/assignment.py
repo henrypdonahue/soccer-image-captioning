@@ -30,7 +30,7 @@ def preprocess_labels():
 def images_in_array():
     image_folder_path = "../data/imagesLocal/"
 
-    images = [os.path.join(image_folder_path, f) for f in os.listdir(image_folder_path)]
+    images = [imread(os.path.join(image_folder_path, f)) for f in os.listdir(image_folder_path)]
     if image_folder_path + '.DS_Store' in images:
         images.remove(image_folder_path + '.DS_Store')
 
