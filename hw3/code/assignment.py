@@ -3,6 +3,9 @@ import numpy as np
 import tensorflow as tf
 from conv_model import CustomSequential
 
+import os
+from matplotlib.pyplot import imread
+
 ## Run functions eagerly to allow numpy conversions.
 ## Enable experimental debug mode to suppress warning (feel free to remove second line)
 tf.config.run_functions_eagerly(True)
@@ -10,6 +13,43 @@ tf.data.experimental.enable_debug_mode()
 
 
 ###############################################################################################
+def preprocess_labels():
+    with open("IAUSD-Lable-Copy.txt") as file_in:
+        lines = []
+        for line in file_in:
+            split_line = line.split()
+            split_line.remove(split_line[0])
+            print(split_line)
+            for item in split_line:
+                if item == "1":
+                    lines.append(split_line.index(item) + 1)
+                    break
+        return lines
+
+#preprocess_labels()
+
+def images_in_array():
+    images = []
+    image_folder = "images2/"
+    for filename in os.listdir(image_folder):
+        img = imread(os.path.join(image_folder, filename))
+        if img is not None:
+            images.append(img)
+    return np.array(images)
+    
+#images_in_array()
+
+def divide_data():
+    labels = preprocess_labels()
+    images = images_in_array()
+
+
+    X0 = images[0:10]
+    Y0 = labels[0:10]
+    X1 = images[10:]
+    Y1 = labels[10:]
+
+    return X0, Y0, X1, Y1
 
 
 def get_data():
@@ -39,9 +79,9 @@ def get_data():
 
     return X0, Y0, X1, Y1, D0, D1, D_info
 
-X0, Y0, X1, Y1, D0, D1, D_info = get_data()
-print("aaa")
-print(Y0)
+#X0, Y0, X1, Y1, D0, D1, D_info = get_data()
+#print("aaa")
+#print(X0[0])
 
 ###############################################################################################
 
