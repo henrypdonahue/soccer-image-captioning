@@ -36,8 +36,8 @@ def images_in_array():
         if f == '.DS_Store':
             continue
         image = imread(os.path.join(image_folder_path, f))
-       # image = image.astype('float32') / 255.0
-       # image = tf.image.resize(image, [32,32])
+        image = image.astype('float32') / 255.0
+        image = tf.image.resize(image, [32,32])
         #print(image.shape)
         images.append(image)
 
@@ -60,12 +60,12 @@ def divide_data():
     images = images_in_array()
 
 
-    X0 = images[0:10]
-    Y0 = labels[0:10]
-    X1 = images[10:]
-    Y1 = labels[10:]
+    X0 = images
+    Y0 = labels
+   # X1 = images
+    #Y1 = labels
 
-    return X0, Y0, X1, Y1
+    return X0, Y0
 
 
 def get_data():
