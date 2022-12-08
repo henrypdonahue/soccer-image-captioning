@@ -30,11 +30,25 @@ def preprocess_labels():
 def images_in_array():
     image_folder_path = "../data/imagesLocal/"
 
-    images = [imread(os.path.join(image_folder_path, f)) for f in os.listdir(image_folder_path)]
-    if image_folder_path + '.DS_Store' in images:
-        images.remove(image_folder_path + '.DS_Store')
+    images = []
+
+    for f in os.listdir(image_folder_path):
+        if f == '.DS_Store':
+            continue
+        image = imread(os.path.join(image_folder_path, f))
+        image = image.astype('float32') / 255.0
+        image = tf.image.resize(image, [32,32])
+        print(image.shape)
+        images.append(image)
+
+
+   # images = [imread(os.path.join(image_folder_path, f)) for f in os.listdir(image_folder_path)]
+
+  #  if image_folder_path + '.DS_Store' in images:
+   #     images.remove(image_folder_path + '.DS_Store')
 
     final_return = np.array(images)
+    
     print(final_return.shape)
     return final_return
     

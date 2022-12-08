@@ -60,24 +60,34 @@ def get_default_CNN_model(
     # tf.keras.layers.Flatten
     model = CustomSequential(
         [
-            Conv2D(32, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(64, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(64,(3,3), input_shape=[32,32,3], strides=(2,2),padding='same', activation=tf.nn.relu, kernel_initializer='he_uniform'),
             tf.keras.layers.MaxPooling2D(pool_size=(2,2), padding='same'),
-            BatchNormalization(), 
+             
 
-            Conv2D(64, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
-            Conv2D(64, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(128, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(128, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
             tf.keras.layers.MaxPooling2D(pool_size=(2,2), padding='same'),
             
 
-            Conv2D(64, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
-            Conv2D(64, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(256, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(256, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(256, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            tf.keras.layers.MaxPooling2D(pool_size=(2,2), padding='same'),
+
+            Conv2D(512, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(512, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(512, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            tf.keras.layers.MaxPooling2D(pool_size=(2,2), padding='same'),
+
+            Conv2D(512, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(512, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
+            Conv2D(512, (3,3), input_shape=[32,32,3], strides=(2,2), padding='same', activation=tf.nn.relu,  kernel_initializer='he_uniform'),
             tf.keras.layers.MaxPooling2D(pool_size=(2,2), padding='same'),
             
             tf.keras.layers.Flatten(),
-            tf.keras.layers.Dense(128, activation=tf.nn.relu),
-            Dropout(.20),
-            BatchNormalization(),
-
+            tf.keras.layers.Dense(4096, activation=tf.nn.relu),
+            tf.keras.layers.Dense(4096, activation=tf.nn.relu),
             tf.keras.layers.Dense(10, activation='softmax'),
             ], 
         input_prep_fn=input_prep_fn,
