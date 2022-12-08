@@ -36,8 +36,8 @@ def images_in_array():
         if f == '.DS_Store':
             continue
         image = imread(os.path.join(image_folder_path, f))
-        image = image.astype('float32') / 255.0
-        image = tf.image.resize(image, [32,32])
+       # image = image.astype('float32') / 255.0
+       # image = tf.image.resize(image, [32,32])
         #print(image.shape)
         images.append(image)
 
@@ -128,7 +128,7 @@ def run_task(data, task, subtask="all", epochs=None, batch_size=None):
     import layers_manual  ## Where your manual non-diffable conv implementation resides
 
     ## Retrieve data from tuple
-    X0, Y0, X1, Y1, D0, D1, D_info = data
+    X0, Y0, X1, Y1, = data #D0, D1, D_info = data
 
     subtask = [1, 2, 3] if subtask == "all" else [int(subtask)]
 
