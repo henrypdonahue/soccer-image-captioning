@@ -38,7 +38,7 @@ def images_in_array():
         image = imread(os.path.join(image_folder_path, f))
         image = image.astype('float32') / 255.0
         image = tf.image.resize(image, [32,32])
-        print(image.shape)
+        #print(image.shape)
         images.append(image)
 
 
