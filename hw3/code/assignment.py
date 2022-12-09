@@ -1,7 +1,6 @@
 from types import SimpleNamespace
 import numpy as np
 import tensorflow as tf
-from conv_model import CustomSequential
 
 import os
 from matplotlib.pyplot import imread
@@ -21,7 +20,7 @@ def preprocess_labels():
 
 
 def images_in_array():
-    image_folder_path = "../data/imagesLocal/"
+    image_folder_path = "../data/images/"
 
     images = []
 
@@ -30,7 +29,7 @@ def images_in_array():
             continue
         image = imread(os.path.join(image_folder_path, f))
         image = image.astype('float32') / 255.0
-        image = tf.image.resize(image, [32,32])
+        image = tf.image.resize(image, [224,224])
         #print(image.shape)
         images.append(image)
 
