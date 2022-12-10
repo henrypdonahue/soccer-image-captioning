@@ -1,0 +1,148 @@
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 104s 1s/step - loss: 0.1760 - accuracy: 0.4888
+Epoch 2/10
+100/100 [==============================] - 105s 1s/step - loss: 0.1697 - accuracy: 0.5036
+Epoch 3/10
+100/100 [==============================] - 104s 1s/step - loss: 0.1661 - accuracy: 0.5130
+Epoch 4/10
+100/100 [==============================] - 104s 1s/step - loss: 0.1646 - accuracy: 0.5001
+Epoch 5/10
+100/100 [==============================] - 101s 1s/step - loss: 0.1632 - accuracy: 0.5152
+Epoch 6/10
+100/100 [==============================] - 706s 7s/step - loss: 0.1600 - accuracy: 0.5202
+Epoch 7/10
+100/100 [==============================] - 400s 4s/step - loss: 0.1599 - accuracy: 0.5221
+Epoch 8/10
+100/100 [==============================] - 101s 1s/step - loss: 0.1658 - accuracy: 0.5114
+Epoch 9/10
+100/100 [==============================] - 125s 1s/step - loss: 0.1617 - accuracy: 0.5239
+Epoch 10/10
+100/100 [==============================] - 179s 2s/step - loss: 0.1536 - accuracy: 0.5337
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 400s 4s/step - loss: 0.1642 - accuracy: 0.5192
+Epoch 2/10
+100/100 [==============================] - 101s 1s/step - loss: 0.1558 - accuracy: 0.5188
+Epoch 3/10
+100/100 [==============================] - 108s 1s/step - loss: 0.1492 - accuracy: 0.5351
+Epoch 4/10
+100/100 [==============================] - 180s 2s/step - loss: 0.1427 - accuracy: 0.5487
+Epoch 5/10
+100/100 [==============================] - 118s 1s/step - loss: 0.1400 - accuracy: 0.5565
+Epoch 6/10
+100/100 [==============================] - 129s 1s/step - loss: 0.1360 - accuracy: 0.5650
+Epoch 7/10
+100/100 [==============================] - 128s 1s/step - loss: 0.1314 - accuracy: 0.5681
+Epoch 8/10
+100/100 [==============================] - 126s 1s/step - loss: 0.1291 - accuracy: 0.5580
+Epoch 9/10
+100/100 [==============================] - 126s 1s/step - loss: 0.1247 - accuracy: 0.5527
+Epoch 10/10
+100/100 [==============================] - 125s 1s/step - loss: 0.1181 - accuracy: 0.5608
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 124s 1s/step - loss: 0.1554 - accuracy: 0.5368
+Epoch 2/10
+100/100 [==============================] - 129s 1s/step - loss: 0.1434 - accuracy: 0.5540
+Epoch 3/10
+100/100 [==============================] - 128s 1s/step - loss: 0.1335 - accuracy: 0.5618
+Epoch 4/10
+100/100 [==============================] - 128s 1s/step - loss: 0.1269 - accuracy: 0.5561
+Epoch 5/10
+100/100 [==============================] - 125s 1s/step - loss: 0.1225 - accuracy: 0.5718
+Epoch 6/10
+100/100 [==============================] - 126s 1s/step - loss: 0.1155 - accuracy: 0.5720
+Epoch 7/10
+100/100 [==============================] - 126s 1s/step - loss: 0.1076 - accuracy: 0.5720
+Epoch 8/10
+100/100 [==============================] - 132s 1s/step - loss: 0.1014 - accuracy: 0.5592
+Epoch 9/10
+100/100 [==============================] - 130s 1s/step - loss: 0.0932 - accuracy: 0.5422
+Epoch 10/10
+100/100 [==============================] - 125s 1s/step - loss: 0.0905 - accuracy: 0.5360
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 120s 1s/step - loss: 0.1561 - accuracy: 0.5058
+Epoch 2/10
+100/100 [==============================] - 127s 1s/step - loss: 0.1412 - accuracy: 0.5274
+Epoch 3/10
+100/100 [==============================] - 125s 1s/step - loss: 0.1339 - accuracy: 0.5267
+Epoch 4/10
+100/100 [==============================] - 126s 1s/step - loss: 0.1209 - accuracy: 0.4557
+Epoch 5/10
+100/100 [==============================] - 126s 1s/step - loss: -0.2319 - accuracy: 0.4182
+Epoch 6/10
+100/100 [==============================] - 126s 1s/step - loss: 0.1908 - accuracy: 0.3934
+Epoch 7/10
+100/100 [==============================] - 138s 1s/step - loss: 0.2585 - accuracy: 0.4066
+Epoch 8/10
+100/100 [==============================] - 1031s 10s/step - loss: 0.2064 - accuracy: 0.3914
+Epoch 9/10
+100/100 [==============================] - 400s 4s/step - loss: 0.1980 - accuracy: 0.3854
+Epoch 10/10
+100/100 [==============================] - 104s 1s/step - loss: 0.1912 - accuracy: 0.3969
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 101s 1s/step - loss: 0.1910 - accuracy: 0.4132
+Epoch 2/10
+100/100 [==============================] - 1131s 11s/step - loss: 0.1870 - accuracy: 0.4202
+Epoch 3/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1826 - accuracy: 0.4455
+Epoch 4/10
+100/100 [==============================] - 102s 1s/step - loss: 0.1799 - accuracy: 0.4580
+Epoch 5/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1768 - accuracy: 0.4662
+Epoch 6/10
+100/100 [==============================] - 102s 1s/step - loss: 0.1749 - accuracy: 0.4748
+Epoch 7/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1729 - accuracy: 0.4828
+Epoch 8/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1707 - accuracy: 0.4902
+Epoch 9/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1674 - accuracy: 0.4971
+Epoch 10/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1659 - accuracy: 0.5014
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 711s 7s/step - loss: 0.1706 - accuracy: 0.4896
+Epoch 2/10
+100/100 [==============================] - 399s 4s/step - loss: 0.1685 - accuracy: 0.4918
+Epoch 3/10
+100/100 [==============================] - 398s 4s/step - loss: 0.1670 - accuracy: 0.4926
+Epoch 4/10
+100/100 [==============================] - 398s 4s/step - loss: 0.1651 - accuracy: 0.5061
+Epoch 5/10
+100/100 [==============================] - 697s 7s/step - loss: 0.1631 - accuracy: 0.4965
+Epoch 6/10
+100/100 [==============================] - 697s 7s/step - loss: 0.1624 - accuracy: 0.5036
+Epoch 7/10
+100/100 [==============================] - 398s 4s/step - loss: 0.1619 - accuracy: 0.5067
+Epoch 8/10
+100/100 [==============================] - 397s 4s/step - loss: 0.1607 - accuracy: 0.5043
+Epoch 9/10
+100/100 [==============================] - 697s 7s/step - loss: 0.1587 - accuracy: 0.5131
+Epoch 10/10
+100/100 [==============================] - 697s 7s/step - loss: 0.1579 - accuracy: 0.5203
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
+Epoch 1/10
+100/100 [==============================] - 997s 7s/step - loss: 0.1619 - accuracy: 0.5146
+Epoch 2/10
+100/100 [==============================] - 398s 4s/step - loss: 0.1584 - accuracy: 0.5213
+Epoch 3/10
+100/100 [==============================] - 99s 990ms/step - loss: 0.1570 - accuracy: 0.5235
+Epoch 4/10
+100/100 [==============================] - 102s 1s/step - loss: 0.1551 - accuracy: 0.5273
+Epoch 5/10
+100/100 [==============================] - 103s 1s/step - loss: 0.1545 - accuracy: 0.5284
+Epoch 6/10
+100/100 [==============================] - 407s 4s/step - loss: 0.1526 - accuracy: 0.5347
+Epoch 7/10
+100/100 [==============================] - 399s 4s/step - loss: 0.1502 - accuracy: 0.5378
+Epoch 8/10
+100/100 [==============================] - 697s 7s/step - loss: 0.1485 - accuracy: 0.5407
+Epoch 9/10
+100/100 [==============================] - 996s 10s/step - loss: 0.1480 - accuracy: 0.5396
+Epoch 10/10
+100/100 [==============================] - 697s 7s/step - loss: 0.1469 - accuracy: 0.5371
+INFO:tensorflow:Assets written to: /Users/henrydonahue/Desktop/files/brown-cs/cs1470/soccer-image-captioning/code/assets
