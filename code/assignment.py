@@ -22,14 +22,15 @@ def preprocess_labels(valueRange: list):
         return final_return
 
 
-def images_in_array(valueRange: list):
+def preprocess_images(valueRange: list):
     images = []
 
     for f in valueRange:
         imagePath = image_folder_path + str(f)+ ".jpg"
         image = imread(imagePath)
         image = image.astype('float32') / 255.0
-        image = tf.image.resize(image, [224,224])
+        image = tf.image.resize(image, [400,400])
+        #image = tf.image.resize_with_pad(image, 400, 400)
         images.append(image)
 
     final_return = np.array(images)
@@ -59,7 +60,7 @@ def get_specific_class(wantedIndex: int):
         imagePath = image_folder_path + str(f + 1)+ ".jpg"
         image = imread(imagePath)
         image = image.astype('float32') / 255.0
-        image = tf.image.resize(image, [224,224])
+        image = tf.image.resize(image, [400,400])
         images.append(image)
 
     final_return2 = np.array(images)
